@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Spartan:wght@300&display=swap');
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92vh;
+}
+
+.info {
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    max-width: 300px;
+    height: 600px;
+    padding: 30px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type=text] {
+    border-radius: 5px;
+    outline: 0;
+    border: 0;
+    padding: 7px;
+    margin: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(34, 60, 80, 0.5) inset;
+}
+
+textarea {
+    border-radius: 5px;
+    border: 0;
+    margin: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(34, 60, 80, 0.5) inset;
+    height: 200px;
+    padding: 8px;
+    outline: 0;
+    resize: none;
+}
+
+
+.date-added{
+    margin: 0;
+    color: grey;
+    font-size: 14px;
+}
+.btn {
+    
+    border-radius: 5px;
+    padding: 10px 80px;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    background: white;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+
+}
+
+.btn:hover {
+    background: black;
+    color: white;
+}
+
+
+/*INPUT FILE CSS VENDOR*/
+.input__wrapper {
+    width: 200px;
+    position: relative;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.input__file {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+.input__file-icon-wrapper {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input__file-button-text {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.input__file-button {
+    background: #000000;
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;
+}

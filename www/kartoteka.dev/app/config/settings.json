@@ -1,0 +1,7 @@
+{
+  "host": "mysql",
+  "dbname": "app",
+  "user": "root",
+  "pass": "secret",
+  "charset": "utf8"
+}

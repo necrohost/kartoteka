@@ -1,0 +1,143 @@
+/*MAIN*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Spartan:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 92vh;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/*CONTAINER*/
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    flex-grow: 1;
+    max-width: 50%;
+}
+
+/*NAV BAR*/
+.navbar {
+    display: flex;
+    width: 100%;
+    height: 50px;
+}
+
+.logo {
+    width: auto;
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    line-height: 60px;
+}
+
+.logo-text {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 35px;
+    font-family: 'Spartan', sans-serif;
+}
+
+.nav-items {
+    padding: 10px;
+    align-items: baseline;
+    width: auto;
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.login {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+/*BUTTON GROUP*/
+.button-group {
+    position: fixed;
+    display: block;
+    height: 150px;
+    width: 200px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 2px;
+}
+
+.button-group ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.button-group li {
+    padding: 10px;
+}
+
+/*BUTTON*/
+.btn {
+    border-radius: 2px;
+    display: inline-block;
+    color: black;
+    background: white;
+    border: 1px solid black;
+    letter-spacing: 2px;
+    cursor: pointer;
+    padding: 5px 20px;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background: black;
+    color: white;
+}
+
+/*CARD*/
+.card-grid {
+    padding: 20px;
+    display: grid;
+    grid-template-rows: repeat(3, 410px);
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    grid-gap: 1rem;
+}
+
+.card {
+    border-radius: 2px;
+    width: 200px;
+    height: 420px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.card p {
+    margin: 0;
+}
+
+.card .title {
+    font-size: 20px;
+}
+
+.card .date-added {
+    font-size: 12px;
+    color: grey;
+}
+
+.img-card img{
+    width: 100%;
+}

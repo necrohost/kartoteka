@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Spartan:wght@300&display=swap');
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92vh;
+}
+
+.info {
+    font-family: 'Roboto Mono', monospace;
+    position: relative;
+    display: flex;
+    max-width: 50%;
+    min-width: 600px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.info-text {
+    margin-left: 30px;
+    flex: 3;
+    width: 30%;
+}
+
+.info-img {
+    flex: 1;
+}
+
+.info-img img {
+    width: 200px;
+    height: 100%;
+    float: left;
+}
+
+.buttons {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.btn {
+    margin-left: 5px;
+    text-decoration: none;
+    color: black;
+    background: white;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.blue:hover {
+    color: white;
+    background: blue;
+}
+
+.green:hover {
+    color: white;
+    background: green;
+}
+
+.red:hover {
+    color: white;
+    background: red;
+}
+
+.status {
+    color: green;
+}
+
+.description {
+    font-size: 13px;
+}
+
+.title {
+    font-family: 'Spartan', sans-serif;
+    text-transform: uppercase;
+}
+
+.date-added {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: grey;
+    font-size: 12px;
+}
